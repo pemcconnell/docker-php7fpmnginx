@@ -1,4 +1,5 @@
-#docker-phpfpmnginx
+docker-phpfpmnginx
+==================
 
 PHP, FPM and nginx running in lightweight container. This is an extremely lean 
 image designed for extending.
