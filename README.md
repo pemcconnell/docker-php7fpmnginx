@@ -9,8 +9,24 @@ contents within each of the subdirectories - each of these subdirectories
 refer to the relevant version of PHP.
 
 
-usage
------
+usage (running)
+-----------------
+
+You can run this image by running the following command:
+
+```bash
+docker run --rm -p 8080:80 -ti pemcconnell/docker-phpfpmnginx:7.1-alpine
+```
+
+This won't have any php files to run. You can pass a file in by mounting a
+directory as a volume:
+
+```bash
+docker run --rm -p 8080:80 -v `pwd`/app:/app -ti pemcconnell/docker-phpfpmnginx:7.1-alpine
+```
+
+usage (extending)
+-----------------
 
 To make use of the image defined in this repo, you can pull it from the 
 docker hub using the following image:
